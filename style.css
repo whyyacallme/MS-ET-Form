@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    transition: background-color 0.3s ease;
+}
+
+#page-title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.info-text {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.main-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.card {
+    width: 380px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    outline: none;
+    font-family: inherit;
+    resize: vertical;
+    transition: all 0.2s ease;
+}
+
+.option-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.option-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.submit-btn {
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+body.theme-camp {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f0fdf4;
+    color: #14532d;
+}
+
+.theme-camp #page-title {
+    color: #166534;
+    font-size: 2.1rem;
+}
+
+.theme-camp .info-text {
+    color: #15803d;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.theme-camp .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(22, 101, 52, 0.08);
+}
+
+.theme-camp .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(22, 101, 52, 0.18);
+}
+
+.theme-camp label {
+    color: #14532d;
+}
+
+.theme-camp input,
+.theme-camp select,
+.theme-camp textarea {
+    background-color: #f0fdf4;
+    color: #14532d;
+    border: none;
+    border-radius: 4px;
+}
+
+.theme-camp input:focus,
+.theme-camp select:focus,
+.theme-camp textarea:focus {
+    background-color: #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+.theme-camp .submit-btn {
+    background-color: #1c703c;
+    color: #ffffff;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.theme-camp .submit-btn:hover {
+    background-color: #14532d;
+}
+
+.theme-camp .avatar {
+    border: none;
+}
+
+.theme-camp th,
+.theme-camp td {
+    border-bottom: 1px solid #b4ecc8;
+}
+
+.theme-camp .table-title {
+    background-color: #1c753e;
+    color: #ffffff;
+    text-align: center;
+}
+
+.theme-camp tbody tr:nth-child(even) {
+    background-color: #dc26260a;
+}
