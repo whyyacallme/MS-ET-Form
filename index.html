@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Adventure Camp Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-camp">
+
+    <h1 id="page-title">Summer Camp Pass</h1>
+    <p class="info-text">Please complete all required fields.</p>
+    <p class="info-text">Double check your email before submitting.</p>
+
+    <div class="main-layout">
+        <form action="#" method="POST" class="card form-card">
+            <h2>Camper Registration</h2>
+
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="userEmail">Email Address:</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="e.g., jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Start Date:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="userNotes">Medical / Dietary Notes:</label>
+                <textarea id="userNotes" name="userNotes" rows="3" placeholder="Enter allergies or requests..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Camp Package:</label>
+                <div class="option-group">
+                    <input type="radio" id="tierPass" name="ticket" value="standard" required>
+                    <label for="tierPass">Day Camper</label>
+
+                    <input type="radio" id="tierVIP" name="ticket" value="vip">
+                    <label for="tierVIP">Overnight VIP</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Equipment Rental:</label>
+                <div class="option-group">
+                    <input type="checkbox" id="veg" name="gear" value="cabin-gear">
+                    <label for="veg">Cabin Gear Included</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tshirt">Cabin Group:</label>
+                <select id="tshirt" name="tshirt" required>
+                    <option value="" disabled selected>Select cabin group...</option>
+                    <option value="pine">Pine Cabin</option>
+                    <option value="oak">Oak Cabin</option>
+                    <option value="cedar">Cedar Cabin</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Register Camper</button>
+        </form>
+
+        <div class="card profile-card">
+            <div class="profile-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtJF6xE3j7-9_6gNjwbKQyCDoir3M4Sw5npBsZji3ew&s=10" alt="ASP" class="avatar">
+                <h3>Camper Badge</h3>
+                <p>Status: Cabin Assigned</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3" class="table-title">Weekly Activity Schedule</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>Camp Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Kayaking &amp; Swimming</td>
+                        <td>Pine Lake</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Archery &amp; Survival Skills</td>
+                        <td>East Forest</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Rock Climbing</td>
+                        <td>Summit Ridge</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Campfire &amp; Talent Show</td>
+                        <td>Amphitheater</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
